@@ -76,6 +76,7 @@ class Category_Posts_Widget extends WP_Widget {
 	 */
 	public function form( $instance ) {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'rrr-plug' );
+		$cat = "";
 		$cat = $instance['cat'];
 		$number    = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
 		?>
